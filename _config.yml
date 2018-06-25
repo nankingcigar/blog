@@ -106,7 +106,7 @@ tag_generator:
   per_page: 10
 
 filter_optimize:
-  enable: true
+  enable: false
   remove_query_string: true
   remove_comments: true
   css:
@@ -134,3 +134,5 @@ theme_config:
     daovoice:
       enabled: true
       app_id: 6b442712
+    github:
+      enabled: true
