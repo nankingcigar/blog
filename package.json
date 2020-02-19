@@ -1,33 +1,26 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server",
-    "d": "hexo clean && hexo generate",
-    "s": "hexo clean && hexo s --debug"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generateCN": "cd zh-CN & npm run generate",
+    "generateEN": "cd en & npm run generate",
+    "generate": "run-p generateCN generateEN"
   },
-  "hexo": {
-    "version": "4.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nankingcigar/blog.git"
   },
-  "dependencies": {
-    "hexo": "^4.0.0",
-    "hexo-algolia": "^1.3.1",
-    "hexo-excerpt": "^1.1.4",
-    "hexo-filter-optimize": "^0.3.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^1.0.0",
-    "hexo-generator-searchdb": "^1.2.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0",
-    "hexo-service-worker": "^1.0.1",
-    "hexo-symbols-count-time": "^0.7.0"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nankingcigar/blog/issues"
+  },
+  "homepage": "https://github.com/nankingcigar/blog#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
 }
