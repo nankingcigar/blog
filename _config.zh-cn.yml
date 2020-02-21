@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Cigar's Blog
+title: June & Cigar
 subtitle: ''
 description: ''
-keywords: 'Cigar, Nanking Cigar, Chao, Chao Yang, Yang'
-author: Cigar
+keywords: 'June, June Zhou, Zhou lvjun, Cigar, Nanking Cigar, Chao, Chao Yang, Yang'
+author: June & Cigar
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -100,14 +100,18 @@ theme: next
 deploy:
   type: ''
 
-# feed:
-#   type: atom
-#   path: atom.xml
-#   limit: 0
-#   hub:
-#   content: true
-#   #content_limit: 140
-#   #content_limit_delim: ' '
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
 
 archive_generator:
   enabled: true
@@ -117,11 +121,11 @@ archive_generator:
   daily: false
   order_by: -date
 
-# excerpt:
-#   depth: 7
-#   excerpt_excludes: []
-#   more_excludes: []
-#   hideWholePostExcerpts: true
+excerpt:
+  depth: 7
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
 
 filter_optimize:
   enable: false
@@ -164,6 +168,7 @@ theme_config:
   minify: true
   custom_file_path:
     header: common/header.swig
+    sidebar: common/sidebar.swig
     postBodyEnd: common/post-body-end.swig
     style: common/styles.styl
   favicon:
@@ -200,6 +205,7 @@ theme_config:
     Weibo: https://www.weibo.com/u/7356662424 || weibo
     FB Page: https://www.facebook.com/nankingcigar || facebook
     Twitter: https://twitter.com/nankingcigar || twitter
+    RSS: atom.xml || rss
   social_icons:
     icons_only: true
     transition: true
@@ -208,6 +214,10 @@ theme_config:
   reward:
     wechatpay: /images/donate_wechat.svg
     alipay: /images/donate_alipay.svg
+  codeblock:
+    copy_button:
+      enable: true
+      show_result: true
   back2top:
     scrollpercent: true
   reading_progress:
@@ -216,9 +226,9 @@ theme_config:
     enable: true
     permalink: https://github.com/nankingcigar
   seo: true
-  fancybox: true
   pjax: true
-  lazyload: true
+  fancybox: true
+  # lazyload: true
   quicklink: 
     enable: true
     home: true
@@ -260,4 +270,5 @@ theme_config:
     global: 
       text: English
       link: /en/
+    RSS: 点击复制
     
